@@ -11,7 +11,7 @@ const BlogPage = ({ data }: any) => {
 
             */
   return <Layout pageTitle="Blog Posts" current="Blog">
-    <p className="mb-10 text-neutral-500">
+    <p className="mb-10 text-neutral-500 flex justify-center md:justify-start 0 text-sm ">
       I will share random things from time to time.
     </p>
     {

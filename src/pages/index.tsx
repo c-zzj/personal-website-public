@@ -9,8 +9,10 @@ const IndexPage = () => {
   const contactButton = "hover:duration-200 hover:fill-pink-700 active:fill-pink-800";
   return (
     <Layout pageTitle="Zijun Zhao" current="Home">
-      <StaticImage className="flex float-right h-36 w-36 md:h-72 md:w-72 rounded-full ml-3 mb-3"
-        alt="a photo of myself along with my cat Daju" src="../images/selfie2.jpg" />
+      <div className="container mx-auto">
+        <StaticImage className="block m-auto md:float-right mb-5 h-36 w-36 md:h-72 md:w-72"
+          imgStyle={{ borderRadius: '100%' }} alt="a photo of myself along with my cat Daju" src="../images/selfie2.jpg" />
+      </div>
       <div className="flex flex-col">
         <div className="text-lg container max-w-lg">
           <p className={spaceBetween}>
@@ -34,7 +36,7 @@ const IndexPage = () => {
             You might have noticed the orange cat in the photo on the right. Her name is Daju, and you can check out the Daju tab for more about her.
           </p>
         </div>
-        <div className='place-self-end bottom-0 flex flex-row space-x-7 justify-center'>
+        <div className='place-self-end bottom-0 flex flex-row space-x-7 justify-center mx-6 my-4'>
           <Link to="mailto: zzj150825@gmail.com" className={contactButton}>
             <SocialLogo icon='mail' size={48} />
           </Link>

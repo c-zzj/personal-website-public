@@ -62,7 +62,7 @@ const Layout = ({ pageTitle, current, children }: any) => {
                         </ul>
                     </nav>
                     <main>
-                        <h1 className="pt-5 pb-10 text-neutral-500 font-thin text-5xl">
+                        <h1 className="flex justify-center md:justify-start pt-5 pb-10 text-neutral-500 font-thin text-5xl">
                             {pageTitle}
                         </h1>
                         {children}

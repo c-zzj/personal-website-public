@@ -32,6 +32,7 @@ const AboutPage = ({ data }: any) => {
                                 <a href={node.publicURL}>
                                     <GatsbyImage image={node.childImageSharp.gatsbyImageData} alt={node.base}
                                         className="rounded-lg active:brightness-50 hover:shadow-3xl"
+                                        imgStyle={{ borderRadius: '0.5rem' }}
                                     />
                                 </a>
                             </p>
